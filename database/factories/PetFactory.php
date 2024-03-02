@@ -24,7 +24,7 @@ class PetFactory extends Factory
             'age' => fake()->numberBetween(1,20),
             'date_of_birth' => fake()->dateTime(),
             'owner_name' => fake()->name(),
-            'is_cremated' => fake()->boolean(),
+            'is_cremated' => false,
         ];
     }
 }

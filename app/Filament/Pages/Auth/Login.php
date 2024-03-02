@@ -12,7 +12,7 @@ class Login extends BasePage
 
         if (app()->environment('local')) {
             $this->form->fill([
-                'email' => 'victor@example.com',
+                'email' => 'victor@email.com',
                 'password' => 'victor',
                 'remember' => true,
             ]);
