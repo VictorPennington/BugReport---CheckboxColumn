@@ -3,24 +3,16 @@
 namespace App\Filament\Pages;
 
 use App\Models\Pet;
-
-use App\Models\User;
 use Filament\Pages\Page;
 use Filament\Tables\Table;
 use Illuminate\Support\Carbon;
-
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\CheckboxColumn;
-
-
-
 use Filament\Forms\Contracts\HasForms;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Tables\Concerns\InteractsWithTable;
-
-
 class CheckBoxColumnError extends Page implements HasTable, HasForms
 {
 
@@ -56,7 +48,8 @@ class CheckBoxColumnError extends Page implements HasTable, HasForms
                 IconColumn::make('is_cremated')->label("Cremated")->boolean(),
                 CheckboxColumn::make('is_cremated')->label("Cremated"), // Not Sure if is a bug or just conflict, but When changing the order of the columns, the bottom column will not show.
                 ]);
-                }
+
+    }
 
 
 }
